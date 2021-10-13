@@ -43,17 +43,18 @@ while True:
 
     elif option == 7:
         num = int(input("Input a numer: "))
-        index = 1
-        for elem in list:
-            if elem == num:
-                print("")
-            index += 1
-        list.index()
+        pos = 0
+        for elem in range(0, list.count(num)):
+            index = list.index(num, pos)
+            print(index, end=" ")
+            pos += 1
+        print
 
     elif option == 8:
         for elem in list:
             print(elem, end=" ")
-            print()
+            
+        print()
 
     elif option == 9:
         break
